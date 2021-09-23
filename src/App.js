@@ -1,10 +1,15 @@
 import React from 'react'
+import ImageSection from './components/ImageSection'
+import Navbar from './components/Navbar'
+import { GlobalUnsplashProvider } from './context/Unsplash'
+import "./App.css"
 
 const App = () => {
   return (
-    <div>
-      Working App
-    </div>
+    <GlobalUnsplashProvider>
+      <Navbar />
+      <ImageSection />
+    </GlobalUnsplashProvider>
   )
 }
 
