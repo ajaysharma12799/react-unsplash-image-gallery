@@ -11,7 +11,7 @@ export const GlobalUnsplashProvider = ({children}) => {
     useEffect(async () => {
         const resp = await fetchAllImage();
         const categoryResponse = await fetchAllCategories();
-        
+
         setResponse(resp.data);
         setCategories(categoryResponse.data);
     }, []);

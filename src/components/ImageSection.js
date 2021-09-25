@@ -11,7 +11,7 @@ const ImageSection = () => {
                     response.map((image) => (
                         <Card image={image} key={image.id} />
                     ))
-                 ) : (<h4>No Image</h4>)
+                 ) : (<h4>Images Loading...</h4>)
             }
         </div>
     )
